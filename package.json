@@ -1,5 +1,23 @@
 {
   "name": "elm-xhr-bytes-bridge",
+  "version": "1.0.0",
+  "description": "XHR monkeypatch bridge for transferring Bytes between Elm and JS",
   "type": "module",
-  "main": "js/xhr-bytes-bridge.js"
+  "main": "js/xhr-bytes-bridge.js",
+  "files": [
+    "js"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Matthieu Pizenberg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpizenberg/elm-xhr-bytes-bridge.git"
+  },
+  "keywords": [
+    "elm",
+    "xhr",
+    "bytes",
+    "ports",
+    "binary"
+  ]
 }
