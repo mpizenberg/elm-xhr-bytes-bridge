@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>elm-xhr-bytes-bridge example</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="elm.js"></script>
+        <script type="module">
+            import * as bridge from "../js/xhr-bytes-bridge.js";
+
+            // Install the XHR monkeypatch
+            bridge.install();
+
+            // Echo handler: receives bytes from Elm and sends them right back
+            bridge.handle("echo/test", (req, resolve) => {
+                console.log(
+                    "Received from Elm:",
+                    new Uint8Array(req.body.buffer),
+                );
+                resolve(200, req.body.buffer);
+            });
+
+            // Start the Elm app
+            Elm.Main.init({ node: document.getElementById("app") });
+        </script>
+    </body>
+</html>
