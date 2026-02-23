@@ -1,0 +1,5 @@
+{
+  "name": "elm-xhr-bytes-bridge",
+  "type": "module",
+  "main": "js/xhr-bytes-bridge.js"
+}
