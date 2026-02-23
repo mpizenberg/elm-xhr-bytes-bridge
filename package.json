@@ -11,7 +11,7 @@
   "author": "Matthieu Pizenberg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpizenberg/elm-xhr-bytes-bridge.git"
+    "url": "git+https://github.com/mpizenberg/elm-xhr-bytes-bridge.git"
   },
   "keywords": [
     "elm",
